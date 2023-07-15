@@ -6,11 +6,6 @@
     padding: 75px 70px 75px 70px;
 }
 
-.promo__image {
-    height: 304px;
-    width: 310px;
-}
-
 .promo__container {
     color: #000000;
 }
@@ -23,7 +18,6 @@
 }
 
 .promo__subtitle {
-    line-height: auto;
     font-size: 13px;
     font-weight: 400;
     margin: 36px 520px 0 0;
@@ -45,3 +39,7 @@
     border: 1px solid #000000;
 }
 
+.promo__image {
+    height: 304px;
+    width: 310px;
+}
