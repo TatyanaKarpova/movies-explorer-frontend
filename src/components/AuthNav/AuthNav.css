@@ -1,0 +1,25 @@
+.auth-nav {
+    display: flex;
+    align-items: center;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.auth-nav__link {
+    text-decoration: none;
+    color: #000000;
+    margin-right: 30px;
+}
+
+.auth-nav__button {
+    color: #fff;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #000;
+    width: 76px;
+    height: 32px;
+    border-radius: 3px;
+}
