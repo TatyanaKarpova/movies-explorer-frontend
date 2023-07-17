@@ -5,13 +5,13 @@ import headerLogo from '../../images/logo.svg';
 import '../../vendor/hover.css';
 import './Header.css';
 
-function Header () {
+function Header ({loggedIn}) {
     return (
-        <header className='header'>
+        <header className={loggedIn ? 'header' : 'header_type_light'}>
             <Link to='/'>
                 <img className='header__logo hover' src={headerLogo} alt='Лого'/>
             </Link>
-            <Navigation />
+            <Navigation loggedIn={loggedIn} />
         </header>
     )
 };

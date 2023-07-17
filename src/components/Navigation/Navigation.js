@@ -3,10 +3,8 @@ import AuthNav from '../AuthNav/AuthNav';
 import MoviesNav from '../MoviesNav/MoviesNav';
 
 
-function Navigation({ loggedIn }) {
-  
+function Navigation({ loggedIn }) {  
     return loggedIn ? <MoviesNav /> : <AuthNav />;
-
 };
   
 export default Navigation;
