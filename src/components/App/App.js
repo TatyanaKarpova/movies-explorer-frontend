@@ -22,7 +22,7 @@ function App() {
         />
         <Route 
           path='/saved-movies' 
-          component={SavedMovies} 
+          element={<SavedMovies />} 
         />
         <Route 
           path='/profile' 

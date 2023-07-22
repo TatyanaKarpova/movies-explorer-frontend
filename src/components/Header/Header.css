@@ -1,13 +1,16 @@
 .header {
     margin: 0;
     padding: 18px 70px 18px 70px;
-    background-color: #F3C1F8;
     display: flex;
     justify-content: space-between;
 }
 
-.header_type_light {
+.header_type_white {
     background-color: #FFFFFF;
+}
+
+.header_type_pink {
+    background-color: #F3C1F8;
 }
 
 .header__logo {

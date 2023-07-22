@@ -21,17 +21,17 @@ function MoviesCard({ movie }) {
                     <h2 className='movies-card__title'>{movie.title}</h2>
                     <p className='movies-card__duration'>{movie.duration}</p>
                 </div>
-                <div className='movies-card__button'>
-                    {pathname === '/saved-movies' ? (
-                        <button className='movies-card__like hover' type='button'></button>
-                    ) : (
-                        <button 
-                            className={`movies-card__like hover ${isLiked ? 'movies-card__like_active' : ''}`} 
-                            type='button' 
-                            onClick={handleMoviesCardLikeToogle}
-                        ></button>
-                    )}
-                </div>
+                {pathname === '/saved-movies' ? (
+                    <button
+                    className='movies-card__delete hover'
+                    ></button>
+                ) : (
+                    <button 
+                        className={`movies-card__like hover ${isLiked ? 'movies-card__like_active' : ''}`} 
+                        type='button' 
+                        onClick={handleMoviesCardLikeToogle}
+                    ></button>
+                )}
             </div>
         </section>
     );

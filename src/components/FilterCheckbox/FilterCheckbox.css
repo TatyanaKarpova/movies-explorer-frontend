@@ -64,3 +64,22 @@
     font-size: 13px;
     font-weight: 400;
 }
+
+@media screen and (max-width: 1024px) {
+    .filter-checkbox {
+        padding: 0 20px 0 19px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .filter-checkbox {
+        margin: 46px;
+        padding: 0;
+        background-color: #FFFFFF;
+    }
+
+    .filter-checkbox__title {
+        margin: 0;
+        font-size: 11px;
+    }
+}

@@ -11,7 +11,7 @@ const isLoading = false;
 function Movies() {
   return (
     <div className='movies'>
-      <Header loggedIn={true} />
+      <Header isLoggedIn={true} />
       <SearchForm />
         {isLoading ? <Preloader /> :
           <MoviesCardList movie={movies} />
