@@ -12,13 +12,34 @@ function App() {
   return (
     <div className='page'>
       <Routes>
-        <Route exact path='/' element={<Main />} />
-        <Route path='/movies' element={<Movies />} />
-        <Route path='/saved-movies' component={SavedMovies} />
-        <Route path='/profile' component={Profile} />
-        <Route path='/signin' component={Login} />
-        <Route path='/signup' component={Register} />
-        <Route path='/*' element={<NotFound />} />
+        <Route
+          exact path='/' 
+          element={<Main />}
+        />
+        <Route 
+          path='/movies' 
+          element={<Movies />} 
+        />
+        <Route 
+          path='/saved-movies' 
+          component={SavedMovies} 
+        />
+        <Route 
+          path='/profile' 
+          element={<Profile />} 
+        />
+        <Route 
+          path='/signin' 
+          element={<Login />} 
+        />
+        <Route 
+          path='/signup' 
+          element={<Register />} 
+        />
+        <Route 
+          path='/*' 
+          element={<NotFound />} 
+        />
       </Routes>
     </div>
   );

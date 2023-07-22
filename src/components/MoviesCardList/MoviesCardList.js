@@ -1,5 +1,5 @@
-import './MoviesCardList.css';
 import MoviesCard from '../MoviesCard/MoviesCard';
+import './MoviesCardList.css';
 import '../../vendor/hover.css';
 
 function MoviesCardList({ movie }) {

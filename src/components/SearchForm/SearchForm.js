@@ -1,6 +1,6 @@
-import '../../vendor/hover.css';
 import FilterCheckbox from '../FilterCheckbox/FilterCheckbox';
 import './SearchForm.css';
+import '../../vendor/hover.css';
 
 function SearchForm() {
   return (

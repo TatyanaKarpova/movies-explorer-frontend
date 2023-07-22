@@ -7,19 +7,34 @@
 }
 
 .auth-nav__link {
+    margin-right: 30px;
     text-decoration: none;
     color: #000000;
-    margin-right: 30px;
 }
 
 .auth-nav__button {
-    color: #fff;
-    box-shadow: none;
     margin: 0;
     padding: 0;
+    color: #fff;
+    box-shadow: none;
     border: 0;
     background-color: #000;
     width: 76px;
     height: 32px;
     border-radius: 3px;
+}
+
+@media screen and (max-width: 320px) {
+    .auth-nav {
+        font-size: 10px;
+    }
+
+    .auth-nav__link {
+        margin-right: 14px;
+    }
+
+    .auth-nav__button {
+        width: 54px;
+        height: 26px;
+    }
 }

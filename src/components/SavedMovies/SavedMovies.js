@@ -1,10 +1,9 @@
-/*import './SavedMovies.css';
-import SearchForm from '../SearchForm/SearchForm';
+/*import SearchForm from '../SearchForm/SearchForm';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
+import './SavedMovies.css';
 import movies from '../../utils/movies';
 
 function SavedMovies() {
-
     return (
       <section className='saved-movies'>
         <SearchForm />

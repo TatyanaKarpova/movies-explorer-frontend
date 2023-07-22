@@ -1,10 +1,10 @@
 import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
 import SearchForm from '../SearchForm/SearchForm';
 import Preloader from '../Preloader/Preloader';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
-import movies from '../../utils/movies';
+import Footer from '../Footer/Footer';
 import './Movies.css';
+import movies from '../../utils/movies';
 
 const isLoading = false;
 

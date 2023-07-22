@@ -6,8 +6,8 @@
 
 .movies-card__image {
     display: block;
-    max-width: 364px;
     width: 100%;
+    max-width: 364px;
     height: 203px;
     object-fit: cover;
 }
@@ -36,10 +36,10 @@
 }
 
 .movies-card__like {
-    background-image: url(../../images/like-icon.svg);
-    box-shadow: none;
     margin: 19px 24px 47px 0;
     padding: 0;
+    background-image: url(../../images/like-icon.svg);
+    box-shadow: none;
     border: 0;
     background-color: initial;
     width: 14px;

@@ -1,6 +1,6 @@
 import { React } from 'react';
-import AuthNav from '../AuthNav/AuthNav';
 import MoviesNav from '../MoviesNav/MoviesNav';
+import AuthNav from '../AuthNav/AuthNav';
 
 
 function Navigation({ loggedIn }) {  

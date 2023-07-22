@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom';
-import '../../vendor/hover.css';
-import profileIcon from '../../images/profile-icon.svg';
 import './MoviesNav.css';
+import profileIcon from '../../images/profile-icon.svg';
+import '../../vendor/hover.css';
+
 
 function MoviesNav() {
     return (

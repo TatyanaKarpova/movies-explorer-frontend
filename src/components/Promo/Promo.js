@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import promoImage from '../../images/promo-image.svg';
 import './Promo.css';
+import promoImage from '../../images/promo-image.svg';
 import '../../vendor/hover.css';
 
 
