@@ -45,6 +45,11 @@
     flex-grow: 1;
 }
 
+.search-form__input:focus-within {
+    outline: 2px solid #87CEFA;
+    border-radius: 9px;
+}
+
 .search-form__input::placeholder {
     line-height: 20px;
     font-size: 18px;
