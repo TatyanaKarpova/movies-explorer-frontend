@@ -18,12 +18,15 @@
     font-weight: 400;
 }
 
-.not-found__link {
+.not-found__button {
     margin: 185px 0 0 0;
     text-decoration: none;
     color: #000000;
     font-size: 14px;
     font-weight: 400;
+    box-shadow: none;
+    border: 0;
+    background-color: initial;
 }
 
 @media screen and (max-width: 768px) {
@@ -46,7 +49,7 @@
         font-size: 12px;
     }
 
-    .not-found__link {
+    .not-found__button {
         margin: 285px 0 0 0;
         font-size: 12px;
     }
