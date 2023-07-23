@@ -1,6 +1,7 @@
 const myUserData = {
-    name: 'Татьяна',
-    email: 'tatyana_k@mail.ru',
-};
+    name: "Татьяна",
+    email: "tatyana_k@mail.ru",
+  };
   
-export default myUserData;
+  export default myUserData;
+  

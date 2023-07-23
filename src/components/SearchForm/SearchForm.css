@@ -43,7 +43,7 @@
     font-size: 18px;
     font-weight: 400;
     flex-grow: 1;
-} 
+}
 
 .search-form__input::placeholder {
     line-height: 20px;
