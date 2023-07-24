@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./MenuNav.css";
 import profileIcon from "../../images/profile-icon.svg";
-import "../../vendor/hover.css";
 
 function MenuNav() {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
@@ -19,16 +18,19 @@ function MenuNav() {
             isMenuClicked ? "menu-nav__links-container_mobile" : ""
           }`}
         >
-          <NavLink to='/' className='menu-nav__link-main hover'>
+          <NavLink to="/" className="menu-nav__link menu-nav__link_type_main">
             Главная
           </NavLink>
           <NavLink
-            to='/movies'
-            className='menu-nav__link-movie hover menu-nav__link_active'
+            to="/movies"
+            className="menu-nav__link menu-nav__link_type_movie menu-nav__link_active"
           >
             Фильмы
           </NavLink>
-          <NavLink to='/saved-movies' className='menu-nav__link-movie hover'>
+          <NavLink
+            to="/saved-movies"
+            className="menu-nav__link menu-nav__link_type_movie"
+          >
             Сохранённые фильмы
           </NavLink>
         </div>
@@ -37,33 +39,39 @@ function MenuNav() {
             isMenuClicked ? "menu-nav__links-container_mobile" : ""
           }`}
         >
-          <NavLink to='/profile' className='menu-nav__link-account hover'>
+          <NavLink
+            to="/profile"
+            className="menu-nav__link menu-nav__link_type_account"
+          >
             Аккаунт
           </NavLink>
-          <NavLink to='/profile' className='menu-nav__link-account hover'>
-            <div className='menu-nav__profile-icon-wrapper hover'>
+          <NavLink
+            to="/profile"
+            className="menu-nav__link menu-nav__link_type_account"
+          >
+            <div className="menu-nav__profile-icon-wrapper">
               <img
-                className='menu-nav__profile-icon hover'
+                className="menu-nav__profile-icon"
                 src={profileIcon}
-                alt='Лого'
+                alt="Лого"
               ></img>
             </div>
           </NavLink>
         </div>
       </nav>
       <div
-        className={`menu-nav__overlay ${
-          isMenuClicked ? "menu-nav__overlay_visible" : ""
+        className={`menu-nav-overlay ${
+          isMenuClicked ? "menu-nav-overlay_visible" : ""
         }`}
       ></div>
       <button
-        type='button'
-        className={`menu-nav__button_desktop hover ${
+        type="button"
+        className={`menu-nav-button_desktop ${
           isMenuClicked
-            ? "menu-nav__button menu-nav__button_close"
-            : "menu-nav__button menu-nav__button_menu hover"
+            ? "menu-nav-button menu-nav-button_close"
+            : "menu-nav-button menu-nav-button_menu"
         }`}
-        aria-label='Открыть или закрыть меню'
+        aria-label="Открыть или закрыть меню"
         onClick={handleMenuClick}
       ></button>
     </>

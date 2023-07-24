@@ -1,7 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import "./MoviesCard.css";
-import "../../vendor/hover.css";
 
 function MoviesCard({ movie }) {
   const { pathname } = useLocation();
@@ -13,34 +12,34 @@ function MoviesCard({ movie }) {
   }
 
   return (
-    <section className='movies-card'>
+    <li className="movies-card">
       <img
-        className='movies-card__image'
+        className="movies-card__image"
         src={movie.image}
         alt={movie.title}
       ></img>
-      <div className='movies-card__bottom-items-container'>
-        <div className='movies-card__info'>
-          <h2 className='movies-card__title'>{movie.title}</h2>
-          <p className='movies-card__duration'>{movie.duration}</p>
+      <div className="movies-card__bottom-items-container">
+        <div className="movies-card__info">
+          <h2 className="movies-card__title">{movie.title}</h2>
+          <p className="movies-card__duration">{movie.duration}</p>
         </div>
         {pathname === "/saved-movies" ? (
           <button
-            className='movies-card__delete hover'
-            aria-label='Удалить фильм из избранного'
+            className="movies-card__delete"
+            aria-label="Удалить фильм из избранного"
           ></button>
         ) : (
           <button
-            className={`movies-card__like hover ${
+            className={`movies-card__like ${
               isLiked ? "movies-card__like_active" : ""
             }`}
-            type='button'
-            aria-label='Добавить фильм в избранное'
+            type="button"
+            aria-label="Добавить фильм в избранное"
             onClick={handleMoviesCardLikeToogle}
           ></button>
         )}
       </div>
-    </section>
+    </li>
   );
 }
 

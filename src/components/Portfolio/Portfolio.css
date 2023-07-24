@@ -34,6 +34,12 @@
     font-size: 30px;
     font-weight: 400;
     letter-spacing: -0.04em;
+    transition: opacity 0.15s;
+}
+
+.portfolio__link:hover {
+    cursor: pointer;
+    opacity: 0.6;
 }
 
 .portfolio__link-item:last-of-type {

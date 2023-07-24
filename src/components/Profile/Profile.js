@@ -2,7 +2,6 @@ import { React } from "react";
 import Header from "../Header/Header";
 import "./Profile.css";
 import userData from "../../utils/myUserData";
-import "../../vendor/hover.css";
 
 function Profile() {
   const { name, email } = userData;
@@ -43,13 +42,13 @@ function Profile() {
           </fieldset>
           <div className="profile__buttons-container">
             <button
-              className="profile__button profile__button_edit hover"
+              className="profile__button profile__button_edit"
               type="submit"
             >
               Редактировать
             </button>
             <button
-              className="profile__button profile__button_exit hover"
+              className="profile__button profile__button_exit"
               type="submit"
             >
               Выйти из аккаунта

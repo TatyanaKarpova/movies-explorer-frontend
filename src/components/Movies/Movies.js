@@ -10,7 +10,7 @@ const isLoading = false;
 
 function Movies() {
   return (
-    <div className='movies'>
+    <div className="movies">
       <Header isLoggedIn={true} />
       <main>
         <SearchForm />

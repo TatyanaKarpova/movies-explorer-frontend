@@ -1,18 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./AuthNav.css";
-import "../../vendor/hover.css";
 
 function AuthNav() {
   return (
-    <nav className='auth-nav'>
-      <NavLink to='/signup' className='auth-nav__link hover'>
+    <nav className="auth-nav">
+      <NavLink to="/signup" className="auth-nav__link">
         Регистрация
       </NavLink>
-      <NavLink to='/signin'>
-        <button className='auth-nav__button hover' aria-label='Войти'>
-          Войти
-        </button>
+      <NavLink to="/signin" className="auth-nav__link-button">
+        Войти
       </NavLink>
     </nav>
   );

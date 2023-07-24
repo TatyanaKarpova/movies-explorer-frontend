@@ -10,15 +10,15 @@ import "./App.css";
 
 function App() {
   return (
-    <div className='page'>
+    <div className="page">
       <Routes>
-        <Route exact path='/' element={<Main />} />
-        <Route path='/movies' element={<Movies />} />
-        <Route path='/saved-movies' element={<SavedMovies />} />
-        <Route path='/profile' element={<Profile />} />
-        <Route path='/signin' element={<Login />} />
-        <Route path='/signup' element={<Register />} />
-        <Route path='/*' element={<NotFound />} />
+        <Route exact path="/" element={<Main />} />
+        <Route path="/movies" element={<Movies />} />
+        <Route path="/saved-movies" element={<SavedMovies />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/signin" element={<Login />} />
+        <Route path="/signup" element={<Register />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </div>
   );

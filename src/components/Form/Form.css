@@ -1,4 +1,4 @@
-.form__container {
+.form {
     margin: 70px auto 0;
     display: flex;
     flex-direction: column;
@@ -7,6 +7,12 @@
 .form__logo {
     width: 38px;
     height: 38px;
+    transition: opacity 0.15s;
+}
+
+.form__logo:hover {
+    cursor: pointer;
+    opacity: 0.6;
 }
 
 .form__title {
@@ -15,7 +21,7 @@
     font-weight: 500;
 }
 
-.form {
+.form__container {
     width: 396px;
 }
 
@@ -31,6 +37,12 @@
     font-size: 14px;
     font-weight: 500;
     border: 1px solid #000000;
+    transition: opacity 0.15s;
+}
+
+.form__button:hover {
+    cursor: pointer;
+    opacity: 0.6;
 }
 
 .form__button_register {
@@ -58,10 +70,16 @@
 .form__link {
     text-decoration: none;
     color: #000000;
+    transition: opacity 0.15s;
+}
+
+.form__link:hover {
+    cursor: pointer;
+    opacity: 0.6;
 }
 
 @media screen and (max-width: 768px) {
-    .form__container {
+    .form {
         margin: 232px auto 0;
     }
 }
@@ -71,12 +89,13 @@
         margin: 50px 0 0 0;
     }
 
-    .form__container {
+    .form {
         margin: 56px auto 0;
         align-items: center;
+        width: 260px;
     }
 
-    .form {
+    .form__container {
         width: 260px;
     }
 

@@ -72,6 +72,12 @@
     box-shadow: none;
     border: 0;
     background-color: initial;
+    transition: opacity 0.15s;
+}
+
+.profile__button:hover {
+    cursor: pointer;
+    opacity: 0.6;
 }
 
 .profile__button_edit {
