@@ -15,7 +15,7 @@ function SearchForm() {
           />
           <button
             className="search-form__button"
-            type="button"
+            type="submit"
             aria-label="Искать"
           ></button>
         </div>
