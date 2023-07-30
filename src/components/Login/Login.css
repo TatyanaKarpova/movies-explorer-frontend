@@ -30,6 +30,11 @@
     max-height: 46px;
 }
 
+.form__input_type_error {
+    border: 1px solid #FF4062;
+    color: #FF4062;
+}
+
 .form__input:focus {
     outline-color: #87CEFA;
 }
