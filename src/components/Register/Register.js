@@ -4,12 +4,12 @@ import Form from "../Form/Form";
 import useFormValidation from "../../hooks/useFormValidation";
 
 function Register({ onRegister }) {
-  const { values, errors, handleInputChange } = useFormValidation();
+
+  const { values, isValid, errors, handleInputChange, } = useFormValidation();
 
   return (
     <Form
       title="Добро пожаловать!"
-      buttonName="Зарегистрироваться"
       text="Уже зарегистрированы?"
       linkName="Войти"
       path="/signin"
@@ -80,6 +80,18 @@ function Register({ onRegister }) {
           </span>
         </div>
       </fieldset>
+      <button
+            className={
+              isValid
+                ? "form__button form__button_register"
+                : "form__button form__button_register form__button_disabled"
+            }
+            type="submit"
+            aria-label="Зарегистрироваться"
+            disabled={isValid ? false : true}
+          >
+            Зарегистрироваться
+          </button>
     </Form>
   );
 }

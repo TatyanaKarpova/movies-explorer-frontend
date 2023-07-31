@@ -80,6 +80,21 @@
     opacity: 0.6;
 }
 
+.search-form__error {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.21;
+    color: #FF4062;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    visibility: visible;
+}
+
+.search-form__error_hidden {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 1024px) {
     .search-form {
         margin: 72px 0 0 0;

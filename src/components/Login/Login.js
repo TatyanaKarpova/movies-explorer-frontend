@@ -4,12 +4,11 @@ import Form from "../Form/Form";
 import useFormValidation from "../../hooks/useFormValidation";
 
 function Login({ onlogin }) {
-  const { values, errors, handleInputChange } = useFormValidation();
+  const { values, isValid, errors, handleInputChange } = useFormValidation();
 
   return (
     <Form
       title="Рады видеть!"
-      buttonName="Войти"
       text="Ещё не зарегистрированы?"
       linkName="Регистрация"
       path="/signup"
@@ -59,6 +58,18 @@ function Login({ onlogin }) {
           </span>
         </div>
       </fieldset>
+      <button
+            className={
+              isValid
+                ? "form__button form__button_login"
+                : "form__button form__button_login form__button_disabled"
+            }
+            type="submit"
+            aria-label="Войти"
+            disabled={isValid ? false : true}
+          >
+            Войти
+          </button>
     </Form>
   );
 }
