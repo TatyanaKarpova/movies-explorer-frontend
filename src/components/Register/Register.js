@@ -5,7 +5,7 @@ import useFormValidation from "../../hooks/useFormValidation";
 
 function Register({ onRegister }) {
 
-  const { values, isValid, errors, handleInputChange, } = useFormValidation();
+  const { values, isValid, errors, handleInputChange } = useFormValidation();
 
   return (
     <Form

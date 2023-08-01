@@ -17,6 +17,12 @@
     border-top: 1px solid #E8E8E8;
 }
 
+.movies-card-list__text {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+
 .movies-card-list__button {
     margin: 60px 0 0 0;
     padding: 0;
